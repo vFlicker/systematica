@@ -70,6 +70,7 @@
   height: 600px;
   margin-right: 40px;
   position: relative;
+  overflow: hidden;
 }
 
 .slider-items__img-circle {
@@ -87,13 +88,13 @@
 
 .slider-actions {
   margin-top: -60px;
-  margin-bottom: 68px;
+  margin-bottom: 22px;
 }
 
 .slider-actions__prev {
   width: 69px;
   height: 79px;
-  margin-right: 70px;
+  margin-right: 60px;
   position: relative;
 
   &::before {
@@ -106,6 +107,16 @@
     background-image: url(../images/button-prev.png);
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: '';
+    width: 2px;
+    height: 43px;
+    position: absolute;
+    top: 9px;
+    right: -26px;
+    background: #fff;
   }
 }
 
@@ -125,5 +136,15 @@
     background-size: contain;
     background-repeat: no-repeat;
     transform: scale(-1, 1);
+  }
+
+  &::after {
+    content: '';
+    width: 2px;
+    height: 43px;
+    position: absolute;
+    top: 9px;
+    left: -36px;
+    background: #fff;
   }
 }
