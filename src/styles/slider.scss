@@ -1,5 +1,9 @@
+.swiper-container {
+  overflow: visible;
+}
+
 .slider {
-  padding: 0 100px 0 110px;
+  padding: 0 100 / 1920 * 100vw 0 110 / 1920 * 100vw;
 }
 
 .slider-content {
@@ -13,24 +17,26 @@
 
   &::before {
     content: '';
-    width: 156px;
-    height: 254px;
+    width: 156 / 1920 * 100vw;
+    height: 254 / 1920 * 100vw;
     position: absolute;
     top: -180%;
     left: -15%;
     background-image: url(../images/bg-text.png);
+    background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.7;
   }
 
   &::after {
     content: '';
-    width: 156px;
-    height: 254px;
+    width: 156 / 1920 * 100vw;
+    height: 254 / 1920 * 100vw;
     position: absolute;
     top: 20%;
     left: 80%;
     background-image: url(../images/bg-text.png);
+    background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.7;
   }
@@ -41,40 +47,40 @@
 }
 
 .slider-content__number-big {
-  height: 124px;
-  width: 224px;
+  height: 124 / 1920 * 100vw;
+  width: 224 / 1920 * 100vw;
   position: absolute;
-  top: -100px;
-  left: -90px;
+  top: -100 / 1920 * 100vw;
+  left: -90 / 1920 * 100vw;
 }
 
 .slider-content__number-small {
-  width: 60px;
+  width: 60 / 1920 * 100vw;
   position: absolute;
-  top: -40px;
+  top: -40 / 1920 * 100vw;
   left: 0;
 }
 
 .slider-content__img-title {
-  width: 336px;
+  width: 336 / 1920 * 100vw;
   position: relative;
 }
 
 .slider-content__descr {
-  max-width: 480px;
+  max-width: 480 / 1920 * 100vw;
   margin: 0;
 }
 
 .slider-content__items {
-  width: 600px;
-  height: 600px;
-  margin-right: 40px;
+  width: 650 / 1920 * 100vw;
+  height: 650 / 1920 * 100vw;
+  margin-right: 120 / 1920 * 100vw;
   position: relative;
   overflow: hidden;
 }
 
 .slider-items__img-circle {
-  animation: rotate 5s infinite;
+  animation: linear 7s rotate infinite;
 }
 
 .slider-items__product {
@@ -87,64 +93,221 @@
 }
 
 .slider-actions {
-  margin-top: -60px;
-  margin-bottom: 22px;
+  margin-top: -170 / 1920 * 100vw;
+  margin-bottom: 22 / 1920 * 100vw;
+}
+
+.slider-actions__button {
+  position: relative;
+  z-index: 1;
 }
 
 .slider-actions__prev {
-  width: 69px;
-  height: 79px;
-  margin-right: 60px;
-  position: relative;
+  margin-right: 12 / 1920 * 100vw;
+  width: 130 / 1920 * 100vw;
+  height: 215 / 1920 * 100vw;
 
   &::before {
     content: '';
-    width: 130px;
-    height: 215px;
+    width: 2 / 1920 * 100vw;
+    height: 43 / 1920 * 100vw;
     position: absolute;
-    top: -80px;
-    left: -45px;
-    background-image: url(../images/button-prev.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  &::after {
-    content: '';
-    width: 2px;
-    height: 43px;
-    position: absolute;
-    top: 9px;
-    right: -26px;
+    top: 88 / 1920 * 100vw;
+    right: -9 / 1920 * 100vw;
     background: #fff;
   }
 }
 
 .slider-actions__next {
-  width: 69px;
-  height: 79px;
+  width: 145 / 1920 * 100vw;
+  height: 230 / 1920 * 100vw;
   position: relative;
-
-  &::before {
-    content: '';
-    width: 145px;
-    height: 230px;
-    position: absolute;
-    top: -83px;
-    left: -35px;
-    background-image: url(../images/button-next.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    transform: scale(-1, 1);
-  }
+  bottom: -10 / 1920 * 100vw;
 
   &::after {
     content: '';
-    width: 2px;
-    height: 43px;
+    width: 2 / 1920 * 100vw;
+    height: 43 / 1920 * 100vw;
     position: absolute;
-    top: 9px;
-    left: -36px;
+    top: 85 / 1920 * 100vw;
+    left: 0px;
     background: #fff;
   }
 }
+
+@media (max-width: 1366px) {
+  .slider-content__items {
+    margin-right: 120 / 1920 * 100vw;
+  }
+}
+
+@media (max-width: $max-width-lg) {
+  .slider {
+    padding: 0;
+  }
+  
+  .slider-info {
+
+    &::before {
+      width: 156px;
+      height: 254px;
+    }
+  
+    &::after {
+      width: 156px;
+      height: 254px;
+    }
+  }
+
+  .slider-content {
+    flex-direction: column;
+  }
+
+  .slider-content__info {
+    margin-bottom: 70px;
+  }
+  
+  .slider-content__numbers {
+    position: relative;
+  }
+  
+  .slider-content__number-big {
+    height: 124px;
+    width: 224px;
+    top: -100px;
+    left: -90px;
+  }
+  
+  .slider-content__number-small {
+    width: 84px;
+    top: -40px;
+    left: 0;
+  }
+  
+  .slider-content__img-title {
+    width: 336px;
+  }
+  
+  .slider-content__descr {
+    max-width: 340px;
+  }
+  
+  .slider-content__items {
+    width: 540px;
+    height: 540px;
+    margin-right: 0;
+  }
+  
+  .slider-actions {
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    margin: 40px 0 0 0;
+  }
+  
+  .slider-actions__prev {
+    margin-right: 12px;
+    width: 130px;
+    height: 215px;
+  
+    &::before {
+      width: 2px;
+      height: 43px;
+      top: 88px;
+      right: -9px;
+    }
+  }
+  
+  .slider-actions__next {
+    width: 145px;
+    height: 230px;
+    bottom: -10px;
+  
+    &::after {
+      width: 2px;
+      height: 43px;
+      top: 85px;
+      left: 0px;
+    }
+  }
+}
+
+@media (max-width: $max-width-md) {
+  .slider-content__info {
+    margin-bottom: 30px;
+  }
+  
+  .slider-content__number-small {
+    width: 84px;
+    top: -40px;
+    left: 0;
+  }
+
+  .slider-content__items {
+    width: 440px;
+    height: 440px;
+    margin-right: 0;
+  }
+  
+  .slider-actions {
+    margin: 10px 0 0 0;
+  }
+  
+  .slider-actions__prev {
+    margin-right: 12px;
+    width: 120px;
+    height: 205px;
+  
+    &::before {
+      top: 79px;
+    }
+  }
+  
+  .slider-actions__next {
+    width: 140px;
+    height: 220px;
+    bottom: -10px;
+  }
+}
+
+@media (max-width: $max-width-sm) {
+  .slider-info::after {
+    display: none;
+  }
+
+  .slider-content__items {
+    width: 280px;
+    height: 280px;
+  }
+
+  .slider-content__info {
+    max-width: 280px;
+  }
+
+  .slider-actions {
+    margin: 0;
+  }
+
+  .slider-actions__prev {
+    margin-right: 10px;
+    width: 105px;
+    height: 170px;
+    
+    &::before {
+      height: 35px;
+      top: 72px;
+      right: -6px;
+    }
+  }
+
+  .slider-actions__next {
+    width: 120px;
+    height: 180px;
+
+    &::after {
+      height: 35px;
+      top: 72px;
+    }
+  }
+}
+

@@ -10,6 +10,21 @@
 
 <body>
 
+  <div class="background">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <pattern id="hexPattern" width="157.98" height="90.6" patternUnits="userSpaceOnUse" patternTransform="scale(0.5)">
+        <polygon points="104,47.3 54,47.3 29,90.6 54,133.9 104,133.9 129,90.6" />
+        <polygon points="54,137.9 29,181.2 129,181.2 104,137.9" />
+        <polygon points="108,135.9 133,179.2 158,179.2 158,92.6 133,92.6" />
+        <polygon points="108,45.3 133,88.6 158,88.6 158,2 133,2" />
+        <polygon points="104,43.3 129,0 29,0 54,43.3" />
+        <polygon points="49.9,45.3 24.9,2 0,2 0,88.6 24.9,88.6" />
+        <polygon points="50,135.9 25,92.6 0,92.6 0,179.2 25,179.2" />
+      </pattern>
+      <rect width="100%" height="100%" fill="url(#hexPattern)" />
+    </svg>
+  </div>
+
   <header class="page-header">
     <div class="page-header__container container">
 
@@ -37,48 +52,101 @@
 
   <main class="page-content">
     <div class="page-content__container container">
-      <section class="slider">
-        <div class="slider-content">
-          <div class="slider-content__info slider-info">
-            <div class="slider-content__numbers">
-              <img class="slider-content__number-big" src="./images/numbers/big-1.png" alt="Бошая цифра 1">
-              <img class="slider-content__number-small" src="./images/numbers/small-1.png" alt="Маленькая цифра 1">
+      <section class="slider swiper-container">
+
+        <div class="swiper-wrapper">
+
+          <div class="slider-content swiper-slide">
+            <div class="slider-content__info slider-info">
+              <div class="slider-content__numbers">
+                <img class="slider-content__number-big" src="./images/numbers/big-1.png" alt="Бошая цифра 1">
+                <img class="slider-content__number-small" src="./images/numbers/small-1.png" alt="Маленькая цифра 1">
+              </div>
+              <img class="slider-content__img-title" src="./images/title.png" alt="Компьютеры и ноутбуки">
+              <p class="slider-content__descr">[1] Персональные компьютеры, рабочие станции, десктопы, неттопы, моноблоки,
+                ноутбуки, планшеты, лицензионное програмное обеспечение</p>
             </div>
-            <img class="slider-content__img-title" src="./images/title.png" alt="Компьютеры и ноутбуки">
-            <p class="slider-content__descr">Персональные компьютеры, рабочие станции, десктопы, неттопы, моноблоки,
-              ноутбуки, планшеты, лицензионное програмное обеспечение</p>
+            <div class="slider-content__items slider-items">
+              <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
+              <img class="slider-items__product" src="./images/products/01.png" alt="Компьютеры">
+            </div>
           </div>
-          <div class="slider-content__items slider-items">
-            <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
-            <img class="slider-items__product" src="./images/products/01.png" alt="Компьютеры">
+
+          <div class="slider-content swiper-slide">
+            <div class="slider-content__info slider-info">
+              <div class="slider-content__numbers">
+                <img class="slider-content__number-big" src="./images/numbers/big-1.png" alt="Бошая цифра 1">
+                <img class="slider-content__number-small" src="./images/numbers/small-1.png" alt="Маленькая цифра 1">
+              </div>
+              <img class="slider-content__img-title" src="./images/title.png" alt="Компьютеры и ноутбуки">
+              <p class="slider-content__descr">[2] Персональные компьютеры, рабочие станции, десктопы, неттопы, моноблоки,
+                ноутбуки, планшеты, лицензионное програмное обеспечение</p>
+            </div>
+            <div class="slider-content__items slider-items">
+              <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
+              <img class="slider-items__product" src="./images/products/02.png" alt="Компьютеры">
+            </div>
           </div>
+
+          <div class="slider-content swiper-slide">
+            <div class="slider-content__info slider-info">
+              <div class="slider-content__numbers">
+                <img class="slider-content__number-big" src="./images/numbers/big-1.png" alt="Бошая цифра 1">
+                <img class="slider-content__number-small" src="./images/numbers/small-1.png" alt="Маленькая цифра 1">
+              </div>
+              <img class="slider-content__img-title" src="./images/title.png" alt="Компьютеры и ноутбуки">
+              <p class="slider-content__descr">[3] Персональные компьютеры, рабочие станции, десктопы, неттопы, моноблоки,
+                ноутбуки, планшеты, лицензионное програмное обеспечение</p>
+            </div>
+            <div class="slider-content__items slider-items">
+              <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
+              <img class="slider-items__product" src="./images/products/03.png" alt="Компьютеры">
+            </div>
+          </div>
+
         </div>
+
         <div class="slider-actions">
-          <button class="button slider-actions__prev">1</button>
-          <button class="button slider-actions__next">2</button>
+          <a class="button slider-actions__button slider-actions__prev">
+            <img src="../images/button-prev.png" alt="Предыдущий слайд">
+          </a>
+          <a class="button slider-actions__button slider-actions__next">
+            <img src="../images/button-next.png" alt="Следующий слайд">
+          </a>
         </div>
       </section>
     </div>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__container container">
-      <a class="page-footer__button page-footer__button--active" href="#">
-        <img class="page-footer__button-img" src="./images/button-lang-ua.png" alt="Украинский">
-        <img class="page-footer__button-img--active" src="./images/button-lang-ua-active.png" alt="Украинский">
-      </a>
-      <a class="page-footer__button" href="#">
-        <img class="page-footer__button-img" src="./images/button-lang-ru.png" alt="Русский">
-        <img class="page-footer__button-img--active" src="./images/button-lang-ru-active.png" alt="Русский">
-      </a>
-      <a class="page-footer__button" href="#">
-        <img class="page-footer__button-img" src="./images/button-lang-eng.png" alt="Английский">
-        <img class="page-footer__button-img--active" src="./images/button-lang-eng-active.png" alt="Английский">
-      </a>
+    <div class="container">
+      <div class="page-footer__wrapper">
+
+        <div class="header-contacts__wrapper-mob">
+          <a class="header-contacts__phone" href="tel:+380444657587">+38&nbsp;044&nbsp;465&nbsp;75&nbsp;87</a>
+          <a class="header-contacts__email" href="mailto:sales@systematica.com.ua">sales@systematica.com.ua</a>
+        </div>
+
+        <div class="page-footer__buttons">
+          <a class="page-footer__button slider-actions__button  page-footer__button--active" href="#">
+            <img class="page-footer__button-img" src="./images/button-lang-ua.png" alt="Украинский">
+            <img class="page-footer__button-img--active" src="./images/button-lang-ua-active.png" alt="Украинский">
+          </a>
+          <a class="page-footer__button" href="#">
+            <img class="page-footer__button-img" src="./images/button-lang-ru.png" alt="Русский">
+            <img class="page-footer__button-img--active" src="./images/button-lang-ru-active.png" alt="Русский">
+          </a>
+          <a class="page-footer__button" href="#">
+            <img class="page-footer__button-img" src="./images/button-lang-eng.png" alt="Английский">
+            <img class="page-footer__button-img--active" src="./images/button-lang-eng-active.png" alt="Английский">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <script src="js/script.min.js"></script>
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
