@@ -21,12 +21,33 @@ body {
   line-height: 1em;
   color: #fff;
   background-color: #000;
+
+  position: relative;
+
+  &::before,
+  &::after  {
+    content: '';
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &::before {
+    top: 0;
+    background-image: linear-gradient(#0c0c0c, transparent);
+  }
+
+  &::after {
+    bottom: 0;
+    background-image: linear-gradient(transparent, #111111);
+  }
 }
 
 header,
 main,
 footer {
-  z-index: 1;
+  z-index: 5;
 }
 
 button,

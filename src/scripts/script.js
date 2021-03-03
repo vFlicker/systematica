@@ -20,11 +20,3 @@ new Swiper('.slider', {
   },
 });
 
-// const button = document.querySelector('.slider-actions__next');
-// button.addEventListener('click', function() {
-//   var audio = new Audio('audio_file.mp3');
-//   audio.play();
-// });
-
-
-
