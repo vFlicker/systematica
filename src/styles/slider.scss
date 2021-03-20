@@ -9,11 +9,11 @@
 .slider-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .slider-info {
   position: relative;
+  margin-top: 190 / 1920 * 100vw;
 
   &::before {
     content: '';
@@ -25,7 +25,7 @@
     background-image: url(../images/bg-text.png);
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 0.7;
+    opacity: 0.4;
   }
 
   &::after {
@@ -34,7 +34,7 @@
     height: 254 / 1920 * 100vw;
     position: absolute;
     top: 20%;
-    left: 80%;
+    left: 76%;
     background-image: url(../images/bg-text.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@
 }
 
 .slider-content__descr {
-  max-width: 480 / 1920 * 100vw;
+  max-width: 500 / 1920 * 100vw;
   margin: 0;
 }
 
@@ -79,9 +79,13 @@
   overflow: hidden;
 }
 
-.slider-items__img-circle {
-  animation: linear 7s rotate infinite;
+.swiper-slide-active .slider-items__img-circle {
+  animation: linear 1.7s rotate;
 }
+
+// .slider-items__img-circle {
+//   animation: linear 7s rotate infinite;
+// }
 
 .slider-items__product {
   width: 70%;
@@ -93,8 +97,9 @@
 }
 
 .slider-actions {
-  margin-top: -170 / 1920 * 100vw;
+  margin-top: -190 / 1920 * 100vw;
   margin-bottom: 22 / 1920 * 100vw;
+  margin-left: 110 / 1920 * 100vw;
 }
 
 .slider-actions__button {
@@ -104,22 +109,22 @@
 
 .slider-actions__prev {
   margin-right: 12 / 1920 * 100vw;
-  width: 130 / 1920 * 100vw;
+  width: 100 / 1920 * 100vw;
   height: 215 / 1920 * 100vw;
 
   &::before {
     content: '';
     width: 2 / 1920 * 100vw;
-    height: 43 / 1920 * 100vw;
+    height: 33 / 1920 * 100vw;
     position: absolute;
-    top: 88 / 1920 * 100vw;
+    top: 69 / 1920 * 100vw;
     right: -9 / 1920 * 100vw;
     background: #fff;
   }
 }
 
 .slider-actions__next {
-  width: 145 / 1920 * 100vw;
+  width: 115 / 1920 * 100vw;
   height: 230 / 1920 * 100vw;
   position: relative;
   bottom: -10 / 1920 * 100vw;
@@ -127,9 +132,9 @@
   &::after {
     content: '';
     width: 2 / 1920 * 100vw;
-    height: 43 / 1920 * 100vw;
+    height: 33 / 1920 * 100vw;
     position: absolute;
-    top: 85 / 1920 * 100vw;
+    top: 70 / 1920 * 100vw;
     left: 0px;
     background: #fff;
   }
@@ -271,8 +276,14 @@
 }
 
 @media (max-width: $max-width-sm) {
-  .slider-info::after {
-    display: none;
+  .slider-info {
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      opacity: 0.4;
+    }
   }
 
   .slider-content__items {

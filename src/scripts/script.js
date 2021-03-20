@@ -6,10 +6,10 @@ new Swiper('.slider', {
     prevEl: '.slider-actions__prev',
   },
   
-  speed : 1500,
+  speed : 1700,
 
   autoplay: {
-    delay: 1000,
+    delay: 5000,
   },
 
   allowTouchMove: false,
@@ -20,3 +20,6 @@ new Swiper('.slider', {
   },
 });
 
+// (function() {
+//   document.addEventListener('contextmenu', (evt) => evt.preventDefault());
+// })();

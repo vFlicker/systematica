@@ -6,7 +6,6 @@ const gulp = require('gulp'),
     del = require('del'), // удаляет файлы
     imagemin = require('gulp-imagemin'), // сжимает картинки
     jsmin = require('gulp-terser'), // минифицирует JS
-    groupMedia = require('gulp-group-css-media-queries'), // объединяет медиа-файлы
     htmlmin = require('gulp-htmlmin'), // минифицирует HTML
     newer = require('gulp-newer'), // заменяет файлы только на новые
     notify = require('gulp-notify'), // выводит сообщение об ошибке
@@ -45,9 +44,6 @@ const styles = () => {
             scss({
                 outputStyle: "expanded"
             })
-        )
-        .pipe(
-            groupMedia()
         )
         .pipe(
             autoprefixer({

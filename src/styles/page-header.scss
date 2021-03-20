@@ -13,7 +13,7 @@
 .header-contacts {
   display: flex;
   align-items: flex-start;
-  margin-top: 60 / 1920 * 100vw;
+  margin-top: 80 / 1920 * 100vw;
 }
 
 .header-contacts__email {
@@ -54,7 +54,7 @@
 
 .button__write-us-1 {
   display: inline-block;
-  margin-right: 30 / 1920 * 100vw;
+  margin-right: -20 / 1920 * 100vw;
   padding: 0 0 4 / 1920 * 100vw 8 / 1920 * 100vw;
   position: relative;
   border: none;
@@ -131,9 +131,11 @@
   span {
     color: #fff;
     position: absolute;
+    top: 14 / 1920 * 100vw;
+    left: -115 / 1920 * 100vw;
+    font-size: 15 / 1920 * 100vw;
+    text-transform: uppercase;
     white-space: nowrap;
-    left: -120 / 1920 * 100vw;
-    top: 12 / 1920 * 100vw;
   }
 
   &::before {
