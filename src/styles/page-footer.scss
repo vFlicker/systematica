@@ -80,26 +80,26 @@
     margin-bottom: 50px;
   }
   
-  .header-contacts__phone {
+  .phone {
     margin-right: 0;
     margin-bottom: 30px;
     padding: 0 0 16px 90px;
   
     &::before {
-      height: 20px;
+      height: 25px;
       top: 14px;
       background-size: contain;
       background-repeat: no-repeat;
     }
   }
 
-  .header-contacts__email {
+  .email {
     margin-right: 0;
     padding: 0 0 16px 84px;
   
     &::before {
-      height: 20px;
-      top: 17px;
+      height: 35px;
+      top: 9px;
       background-size: contain;
       background-repeat: no-repeat;
     }

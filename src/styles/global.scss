@@ -22,7 +22,6 @@ body {
   line-height: 1em;
   color: #fff;
   background-color: #000;
-
   position: relative;
 
   &::before,
@@ -42,6 +41,23 @@ body {
   &::after {
     bottom: 0;
     background-image: linear-gradient(transparent, #111111);
+  }
+}
+
+.page-wrapper {
+  position: relative;
+  z-index: 3;
+
+  &::before {
+    content: '';
+    width: 53vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('../images/circle-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -141,6 +157,10 @@ img {
   .background::after {
     background-image: url('../images/background-mob.png');
     background-size: contain;
+  }
+
+  .page-wrapper::before {
+    content: none;
   }
 
   .container {

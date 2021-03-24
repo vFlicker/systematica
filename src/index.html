@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="ru">
 
   <div class="background">
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
@@ -28,125 +28,204 @@
     </svg>
   </div>
 
-  <header class="page-header">
-    <div class="page-header__container container">
-
-      <div class="page-header__logo">
-        <img class="page-header" src="./images/logo.png" alt="Systematica">
-      </div>
-
-      <div class="page-header__contacts header-contacts">
-        <div class="header-contacts__wrapper">
-          <a class="header-contacts__email" href="mailto:sales@systematica.com.ua" target="_blank" rel="noopener noreferrer">sales@systematica.com.ua</a>
-          <a class="header-contacts__phone" href="tel:+380444657587">+38&nbsp;044&nbsp;465&nbsp;75&nbsp;87</a>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <div class="page-header__container container">
+        <div class="page-header__logo">
+          <img class="page-header" src="./images/logo.png" alt="Systematica">
         </div>
-        <button class="button__write-us-1">Написать нам</button>
+
+        <div class="page-header__contacts header-contacts">
+          <div class="header-contacts__wrapper">
+            <a class="email" href="mailto:sales@systematica.com.ua" target="_blank" rel="noopener noreferrer">sales@systematica.com.ua</a>
+            <a class="phone" href="tel:+380444657587">+38&nbsp;044&nbsp;465&nbsp;75&nbsp;87</a>
+          </div>
+          <a href="mailto:sales@systematica.com.ua" target="_blank" rel="noopener noreferrer" class="button__write-us-1">Написать нам</a>
+        </div>
+
+        <div class="header-contacts__actions">
+          <a class="button button__write-us-2" href="mailto:sales@systematica.com.ua" target="_blank" rel="noopener noreferrer">Написать нам</a>
+          <a href="./file.pdf" download="Каталог" class="button button__download">
+            <span class="button__download-text">Скачать каталог</span>
+          </a>
+        </div>
+
       </div>
+    </header>
 
-      <div class="header-contacts__actions">
-        <a class="button button__write-us-2" href="mailto:sales@systematica.com.ua" target="_blank" rel="noopener noreferrer">Написать нам</a>
-        <button class="button button__download">
-          <span>Скачать каталог</span>
-        </button>
-      </div>
+    <main class="page-content">
+      <div class="page-content__container container">
+        <section class="slider swiper-container">
 
-    </div>
-  </header>
+          <div class="swiper-wrapper">
 
-  <main class="page-content">
-    <div class="page-content__container container">
-      <section class="slider swiper-container">
-
-        <div class="swiper-wrapper">
-
-          <div class="slider-content swiper-slide">
-            <div class="slider-content__info slider-info">
-              <div class="slider-content__numbers">
-                <img class="slider-content__number-big" src="./images/numbers/big-1.png" alt="Бошая цифра 1">
-                <img class="slider-content__number-small" src="./images/numbers/small-1.png" alt="Маленькая цифра 1">
+            <div class="slider-content swiper-slide">
+              <div class="slider-content__info slider-info">
+                <div class="slider-content__numbers">
+                  <img class="slider-content__number-big" src="./images/numbers/big-1.png" alt="Бошая цифра 1">
+                  <img class="slider-content__number-small" src="./images/numbers/small-1.png" alt="Маленькая цифра 1">
+                </div>
+                <svg
+                  class="slider-title-ru slider-content__img-title  slider-content__img-title--computers"
+                  width="336"
+                  height="119"
+                >
+                  <use xlink:href="images/sprite.svg#ru_computers"></use>
+                </svg>
+                <p class="slider-content__descr">Персональные компьютеры, рабочие станции, десктопы, неттопы, моноблоки, ноутбуки, планшеты, лицензионное программное обеспечение</p>
               </div>
-              <img class="slider-content__img-title" src="./images/title.png" alt="Компьютеры и ноутбуки">
-              <p class="slider-content__descr">[1] Персональные компьютеры, рабочие станции, десктопы, неттопы, моноблоки,
-                ноутбуки, планшеты, лицензионное програмное обеспечение</p>
+              <div class="slider-content__items slider-items">
+                <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
+                <img class="slider-items__product" src="./images/products/01.png" alt="Компьютеры">
+              </div>
             </div>
-            <div class="slider-content__items slider-items">
-              <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
-              <img class="slider-items__product" src="./images/products/01.png" alt="Компьютеры">
+
+            <div class="slider-content swiper-slide">
+              <div class="slider-content__info slider-info">
+                <div class="slider-content__numbers">
+                  <img class="slider-content__number-big" src="./images/numbers/big-2.png" alt="Бошая цифра 2">
+                  <img class="slider-content__number-small" src="./images/numbers/small-2.png" alt="Маленькая цифра 2">
+                </div>
+                <svg 
+                  class="slider-title-ru slider-content__img-title  slider-content__img-title--accessories"
+                  width="456"
+                  height="57"
+                >
+                  <use xlink:href="images/sprite.svg#ru_accessories"></use>
+                </svg>
+                <p class="slider-content__descr">Процессоры, материнские платы, модули памяти, видеокарты, внутренние накопители информации, оптические приводы, блоки питания, системы охлаждения, корпуса</p>
+              </div>
+              <div class="slider-content__items slider-items">
+                <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
+                <img class="slider-items__product" src="./images/products/02.png" alt="Компьютеры">
+              </div>
             </div>
+
+            <div class="slider-content swiper-slide">
+              <div class="slider-content__info slider-info">
+                <div class="slider-content__numbers">
+                  <img class="slider-content__number-big" src="./images/numbers/big-3.png" alt="Бошая цифра 3">
+                  <img class="slider-content__number-small" src="./images/numbers/small-3.png" alt="Маленькая цифра 3">
+                </div>
+                <svg
+                  class="slider-title-ru slider-content__img-title  slider-content__img-title--peripher"
+                  width="403"
+                  height="109"
+                >
+                  <use xlink:href="images/sprite.svg#ru_peripher"></use>
+                </svg>
+                <p class="slider-content__descr">Мониторы, жидкокристаллические панели, источники бесперебойного питания, аккумуляторные батареи, внешние накопители информации, клавиатуры, мыши, веб-камеры, гарнитуры, акустические системы</p>
+              </div>
+              <div class="slider-content__items slider-items">
+                <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
+                <img class="slider-items__product" src="./images/products/03.png" alt="Компьютеры">
+              </div>
+            </div>
+
+            <div class="slider-content swiper-slide">
+              <div class="slider-content__info slider-info">
+                <div class="slider-content__numbers">
+                  <img class="slider-content__number-big" src="./images/numbers/big-4.png" alt="Бошая цифра 4">
+                  <img class="slider-content__number-small" src="./images/numbers/small-4.png" alt="Маленькая цифра 4">
+                </div>
+                <svg
+                  class="slider-title-ru slider-content__img-title  slider-content__img-title--network"
+                  width="610"
+                  height="113"
+                >
+                  <use xlink:href="images/sprite.svg#ru_network"></use>
+                </svg>
+                <p class="slider-content__descr">Серверы, сетевые хранилища NAS, маршрутизаторы, коммутаторы, модемы, медиаконвертеры, патч-панели, кабельно-проводниковая продукция, монтажные шкафы и стойки</p>
+              </div>
+              <div class="slider-content__items slider-items">
+                <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
+                <img class="slider-items__product" src="./images/products/04.png" alt="Компьютеры">
+              </div>
+            </div>
+
+            <div class="slider-content swiper-slide">
+              <div class="slider-content__info slider-info">
+                <div class="slider-content__numbers">
+                  <img class="slider-content__number-big" src="./images/numbers/big-5.png" alt="Бошая цифра 5">
+                  <img class="slider-content__number-small" src="./images/numbers/small-5.png" alt="Маленькая цифра 5">
+                </div>
+                <svg
+                  class="slider-title-ru slider-content__img-title  slider-content__img-title--office"
+                  width="362"
+                  height="51"
+                >
+                  <use xlink:href="images/sprite.svg#ru_office"></use>
+                </svg>
+                <p class="slider-content__descr">Принтеры, сканеры, многофункциональные устройства, плоттеры, чековые принтеры, шредеры, ламинаторы, проекторы, проекционные экраны, расходные материалы</p>
+              </div>
+              <div class="slider-content__items slider-items">
+                <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
+                <img class="slider-items__product" src="./images/products/05.png" alt="Компьютеры">
+              </div>
+            </div>
+
+            <div class="slider-content swiper-slide">
+              <div class="slider-content__info slider-info">
+                <div class="slider-content__numbers">
+                  <img class="slider-content__number-big" src="./images/numbers/big-6.png" alt="Бошая цифра 6">
+                  <img class="slider-content__number-small" src="./images/numbers/small-6.png" alt="Маленькая цифра 6">
+                </div>
+                <svg
+                  class="slider-title-ru slider-content__img-title  slider-content__img-title--tel"
+                  width="410"
+                  height="100"
+                >
+                  <use xlink:href="images/sprite.svg#ru_tel"></use>
+                </svg>
+                <p class="slider-content__descr">Телефоны стационарной связи, факсы, конференц-системы, мини-АТС, смартфоны, мобильные телефоны, видеокамеры, видеорегистраторы, фотоаппараты, системы видеонаблюдения и оповещения</p>
+              </div>
+              <div class="slider-content__items slider-items">
+                <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
+                <img class="slider-items__product" src="./images/products/06.png" alt="Компьютеры">
+              </div>
+            </div>
+
           </div>
 
-          <div class="slider-content swiper-slide">
-            <div class="slider-content__info slider-info">
-              <div class="slider-content__numbers">
-                <img class="slider-content__number-big" src="./images/numbers/big-1.png" alt="Бошая цифра 1">
-                <img class="slider-content__number-small" src="./images/numbers/small-1.png" alt="Маленькая цифра 1">
-              </div>
-              <img class="slider-content__img-title" src="./images/title.png" alt="Компьютеры и ноутбуки">
-              <p class="slider-content__descr">[2] Персональные компьютеры, рабочие станции, десктопы, неттопы, моноблоки,
-                ноутбуки, планшеты, лицензионное програмное обеспечение</p>
-            </div>
-            <div class="slider-content__items slider-items">
-              <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
-              <img class="slider-items__product" src="./images/products/02.png" alt="Компьютеры">
-            </div>
+          <div class="slider-actions">
+            <a class="button slider-actions__button slider-actions__prev">
+              <img src="./images/button-prev.png" alt="Предыдущий слайд">
+            </a>
+            <a class="button slider-actions__button slider-actions__next">
+              <img src="./images/button-next.png" alt="Следующий слайд">
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__wrapper">
+
+          <div class="header-contacts__wrapper-mob">
+            <a class="phone" href="tel:+380444657587">+38&nbsp;044&nbsp;465&nbsp;75&nbsp;87</a>
+            <a class="email" href="mailto:sales@systematica.com.ua">sales@systematica.com.ua</a>
           </div>
 
-          <div class="slider-content swiper-slide">
-            <div class="slider-content__info slider-info">
-              <div class="slider-content__numbers">
-                <img class="slider-content__number-big" src="./images/numbers/big-1.png" alt="Бошая цифра 1">
-                <img class="slider-content__number-small" src="./images/numbers/small-1.png" alt="Маленькая цифра 1">
-              </div>
-              <img class="slider-content__img-title" src="./images/title.png" alt="Компьютеры и ноутбуки">
-              <p class="slider-content__descr">[3] Персональные компьютеры, рабочие станции, десктопы, неттопы, моноблоки,
-                ноутбуки, планшеты, лицензионное програмное обеспечение</p>
-            </div>
-            <div class="slider-content__items slider-items">
-              <img class="slider-items__img-circle" src="./images/circle.png" alt="Круг">
-              <img class="slider-items__product" src="./images/products/03.png" alt="Компьютеры">
-            </div>
+          <div class="page-footer__buttons">
+            <a class="page-footer__button slider-actions__button" href="#ua">
+              <img class="page-footer__button-img" src="./images/button-lang-ua.png" alt="Украинский">
+              <img class="page-footer__button-img--active" src="./images/button-lang-ua-active.png" alt="Украинский">
+            </a>
+            <a class="page-footer__button  page-footer__button--active" href="#ru">
+              <img class="page-footer__button-img" src="./images/button-lang-ru.png" alt="Русский">
+              <img class="page-footer__button-img--active" src="./images/button-lang-ru-active.png" alt="Русский">
+            </a>
+            <a class="page-footer__button" href="#en">
+              <img class="page-footer__button-img" src="./images/button-lang-eng.png" alt="Английский">
+              <img class="page-footer__button-img--active" src="./images/button-lang-eng-active.png" alt="Английский">
+            </a>
           </div>
-
-        </div>
-
-        <div class="slider-actions">
-          <a class="button slider-actions__button slider-actions__prev">
-            <img src="../images/button-prev.png" alt="Предыдущий слайд">
-          </a>
-          <a class="button slider-actions__button slider-actions__next">
-            <img src="../images/button-next.png" alt="Следующий слайд">
-          </a>
-        </div>
-      </section>
-    </div>
-  </main>
-
-  <footer class="page-footer">
-    <div class="container">
-      <div class="page-footer__wrapper">
-
-        <div class="header-contacts__wrapper-mob">
-          <a class="header-contacts__phone" href="tel:+380444657587">+38&nbsp;044&nbsp;465&nbsp;75&nbsp;87</a>
-          <a class="header-contacts__email" href="mailto:sales@systematica.com.ua">sales@systematica.com.ua</a>
-        </div>
-
-        <div class="page-footer__buttons">
-          <a class="page-footer__button slider-actions__button  page-footer__button--active" href="#">
-            <img class="page-footer__button-img" src="./images/button-lang-ua.png" alt="Украинский">
-            <img class="page-footer__button-img--active" src="./images/button-lang-ua-active.png" alt="Украинский">
-          </a>
-          <a class="page-footer__button" href="#">
-            <img class="page-footer__button-img" src="./images/button-lang-ru.png" alt="Русский">
-            <img class="page-footer__button-img--active" src="./images/button-lang-ru-active.png" alt="Русский">
-          </a>
-          <a class="page-footer__button" href="#">
-            <img class="page-footer__button-img" src="./images/button-lang-eng.png" alt="Английский">
-            <img class="page-footer__button-img--active" src="./images/button-lang-eng-active.png" alt="Английский">
-          </a>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script src="./js/libs.min.js"></script>
   <script src="./js/script.js"></script>
