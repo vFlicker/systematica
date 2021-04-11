@@ -68,97 +68,97 @@
 
 .ru {
   .slider-content__img-title--computers {
-    width: 336px;
-    height: 119px;
+    width: 336 / 1920 * 100vw;
+    height: 119 / 1920 * 100vw;
   }
 
   .slider-content__img-title--accessories {
-    width: 466px;
-    height: 62px;
+    width: 466 / 1920 * 100vw;
+    height: 62 / 1920 * 100vw;
   }
 
   .slider-content__img-title--peripher {
-    width: 403px;
-    height: 109px;
+    width: 403 / 1920 * 100vw;
+    height: 109 / 1920 * 100vw;
   }
 
   .slider-content__img-title--network {
-    width: 610px;
-    height: 113px;
+    width: 610 / 1920 * 100vw;
+    height: 113 / 1920 * 100vw;
   }
 
   .slider-content__img-title--office {
-    width: 362px;
-    height: 51px;
+    width: 362 / 1920 * 100vw;
+    height: 51 / 1920 * 100vw;
   }
 
   .slider-content__img-title--tel {
-    width: 410px;
-    height: 100px;
+    width: 410 / 1920 * 100vw;
+    height: 100 / 1920 * 100vw;
   }
 }
 
 .ua {
   .slider-content__img-title--computers {
-    width: 345px;
-    height: 117px;
+    width: 345 / 1920 * 100vw;
+    height: 117 / 1920 * 100vw;
   }
 
   .slider-content__img-title--accessories {
-    width: 385px;
-    height: 60px;
+    width: 385 / 1920 * 100vw;
+    height: 60 / 1920 * 100vw;
   }
 
   .slider-content__img-title--peripher {
-    width: 322px;
-    height: 98px;
+    width: 322 / 1920 * 100vw;
+    height: 98 / 1920 * 100vw;
   }
 
   .slider-content__img-title--network {
-    width: 347px;
-    height: 157px;
+    width: 347 / 1920 * 100vw;
+    height: 157 / 1920 * 100vw;
   }
 
   .slider-content__img-title--office {
-    width: 340px;
-    height: 51px;
+    width: 340 / 1920 * 100vw;
+    height: 51 / 1920 * 100vw;
   }
 
   .slider-content__img-title--tel {
-    width: 365px;
-    height: 98px;
+    width: 365 / 1920 * 100vw;
+    height: 98 / 1920 * 100vw;
   }
 }
 
 .en {
   .slider-content__img-title--computers {
-    width: 364px;
-    height: 107px;
+    width: 364 / 1920 * 100vw;
+    height: 107 / 1920 * 100vw;
   }
 
   .slider-content__img-title--accessories {
-    width: 360px;
-    height: 44px;
+    width: 360 / 1920 * 100vw;
+    height: 44 / 1920 * 100vw;
   }
 
   .slider-content__img-title--peripher {
-    width: 310px;
-    height: 87px;
+    width: 310 / 1920 * 100vw;
+    height: 87 / 1920 * 100vw;
   }
 
   .slider-content__img-title--network {
-    width: 560px;
-    height: 102px;
+    width: 560 / 1920 * 100vw;
+    height: 102 / 1920 * 100vw;
   }
 
   .slider-content__img-title--office {
-    width: 300px;
-    height: 112px;
+    width: 300 / 1920 * 100vw;
+    height: 112 / 1920 * 100vw;
   }
 
   .slider-content__img-title--tel {
-    width: 440px;
-    height: 97px;
+    width: 440 / 1920 * 100vw;
+    height: 97 / 1920 * 100vw;
   }
 }
 
@@ -293,8 +293,100 @@
     left: 0;
   }
 
-  .slider-content__img-title {
-    width: 336px;
+  .ru {
+    .slider-content__img-title--computers {
+      width: 336px;
+      height: 119px;
+    }
+  
+    .slider-content__img-title--accessories {
+      width: 466px;
+      height: 62px;
+    }
+  
+    .slider-content__img-title--peripher {
+      width: 403px;
+      height: 109px;
+    }
+  
+    .slider-content__img-title--network {
+      width: 610px;
+      height: 113px;
+    }
+  
+    .slider-content__img-title--office {
+      width: 362px;
+      height: 51px;
+    }
+  
+    .slider-content__img-title--tel {
+      width: 410px;
+      height: 100px;
+    }
+  }
+  
+  .ua {
+    .slider-content__img-title--computers {
+      width: 345px;
+      height: 117px;
+    }
+  
+    .slider-content__img-title--accessories {
+      width: 385px;
+      height: 60px;
+    }
+  
+    .slider-content__img-title--peripher {
+      width: 322px;
+      height: 98px;
+    }
+  
+    .slider-content__img-title--network {
+      width: 347px;
+      height: 157px;
+    }
+  
+    .slider-content__img-title--office {
+      width: 340px;
+      height: 51px;
+    }
+  
+    .slider-content__img-title--tel {
+      width: 365px;
+      height: 98px;
+    }
+  }
+  
+  .en {
+    .slider-content__img-title--computers {
+      width: 364px;
+      height: 107px;
+    }
+  
+    .slider-content__img-title--accessories {
+      width: 360px;
+      height: 44px;
+    }
+  
+    .slider-content__img-title--peripher {
+      width: 310px;
+      height: 87px;
+    }
+  
+    .slider-content__img-title--network {
+      width: 560px;
+      height: 102px;
+    }
+  
+    .slider-content__img-title--office {
+      width: 300px;
+      height: 112px;
+    }
+  
+    .slider-content__img-title--tel {
+      width: 440px;
+      height: 97px;
+    }
   }
 
   .slider-content__descr {
@@ -347,7 +439,7 @@
   }
 
   .slider-content__number-small {
-    width: 84px;
+    width: 75px;
     top: -40px;
     left: 0;
   }
@@ -356,6 +448,102 @@
     width: 440px;
     height: 440px;
     margin-right: 0;
+  }
+
+    .ru {
+    .slider-content__img-title--computers {
+      width: 336px * 0.7;
+      height: 119px * 0.7;
+    }
+  
+    .slider-content__img-title--accessories {
+      width: 466px * 0.7;
+      height: 62px * 0.7;
+    }
+  
+    .slider-content__img-title--peripher {
+      width: 403px * 0.7;
+      height: 109px * 0.7;
+    }
+  
+    .slider-content__img-title--network {
+      width: 610px * 0.7;
+      height: 113px * 0.7;
+    }
+  
+    .slider-content__img-title--office {
+      width: 362px * 0.7;
+      height: 51px * 0.7;
+    }
+  
+    .slider-content__img-title--tel {
+      width: 410px * 0.7;
+      height: 100px * 0.7;
+    }
+  }
+  
+  .ua {
+    .slider-content__img-title--computers {
+      width: 345px * 0.7;
+      height: 117px * 0.7;
+    }
+  
+    .slider-content__img-title--accessories {
+      width: 385px * 0.7;
+      height: 60px * 0.7;
+    }
+  
+    .slider-content__img-title--peripher {
+      width: 322px * 0.7;
+      height: 98px * 0.7;
+    }
+  
+    .slider-content__img-title--network {
+      width: 347px * 0.7;
+      height: 157px * 0.7;
+    }
+  
+    .slider-content__img-title--office {
+      width: 340px * 0.7;
+      height: 51px * 0.7;
+    }
+  
+    .slider-content__img-title--tel {
+      width: 365px * 0.7;
+      height: 98px * 0.7;
+    }
+  }
+  
+  .en {
+    .slider-content__img-title--computers {
+      width: 364px * 0.7;
+      height: 107px * 0.7;
+    }
+  
+    .slider-content__img-title--accessories {
+      width: 360px * 0.7;
+      height: 44px * 0.7;
+    }
+  
+    .slider-content__img-title--peripher {
+      width: 310px * 0.7;
+      height: 87px * 0.7;
+    }
+  
+    .slider-content__img-title--network {
+      width: 560px * 0.7;
+      height: 102px * 0.7;
+    }
+  
+    .slider-content__img-title--office {
+      width: 300px * 0.7;
+      height: 112px * 0.7;
+    }
+  
+    .slider-content__img-title--tel {
+      width: 440px * 0.7;
+      height: 97px * 0.7;
+    }
   }
 
   .slider-actions {

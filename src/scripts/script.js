@@ -40,10 +40,10 @@
   });
 })();
 
-(function() {
-  // Disable mouse right click
-  document.addEventListener('contextmenu', (evt) => evt.preventDefault());
-})();
+// (function() {
+//   // Disable mouse right click
+//   document.addEventListener('contextmenu', (evt) => evt.preventDefault());
+// })();
 
 (function() {
   // Change language
